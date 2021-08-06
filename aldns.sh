@@ -28,6 +28,7 @@ check()
 	fi
 	if [[ ! -f "/usr/bin/jq" ]];then
 		apt-get -y install jq
+		yum install jq -y
 		exit
 	fi
 	if [[ ! -f "/usr/bin/column" ]];then
